@@ -1,0 +1,16 @@
+//
+//  ViewController.h
+//  LanguageDemo
+//
+//  Created by 12 on 2018/1/24.
+//  Copyright © 2018年 Sino. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *labe;
+
+
+@end
+

@@ -14,6 +14,8 @@
 		13607A4E1FAB0A1B006C60BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13607A4C1FAB0A1B006C60BE /* LaunchScreen.storyboard */; };
 		13607A591FAB0A1C006C60BE /* MMPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13607A581FAB0A1C006C60BE /* MMPTests.m */; };
 		13607A641FAB0A1C006C60BE /* MMPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13607A631FAB0A1C006C60BE /* MMPUITests.m */; };
+		13607A771FAB0FBB006C60BE /* MMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13607A761FAB0FBB006C60BE /* MMTabBarController.m */; };
+		13607A7A1FAB0FDB006C60BE /* MMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13607A791FAB0FDB006C60BE /* MMNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		13607A5F1FAB0A1C006C60BE /* MMPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13607A631FAB0A1C006C60BE /* MMPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMPUITests.m; sourceTree = "<group>"; };
 		13607A651FAB0A1C006C60BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13607A751FAB0FBB006C60BE /* MMTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTabBarController.h; sourceTree = "<group>"; };
+		13607A761FAB0FBB006C60BE /* MMTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTabBarController.m; sourceTree = "<group>"; };
+		13607A781FAB0FDB006C60BE /* MMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNavigationController.h; sourceTree = "<group>"; };
+		13607A791FAB0FDB006C60BE /* MMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		13607A3D1FAB0A1B006C60BE /* MMP */ = {
 			isa = PBXGroup;
 			children = (
+				13607A711FAB0F23006C60BE /* Main */,
 				13607A411FAB0A1B006C60BE /* AppDelegate.h */,
 				13607A421FAB0A1B006C60BE /* AppDelegate.m */,
 				13607A441FAB0A1B006C60BE /* ViewController.h */,
@@ -135,6 +142,41 @@
 				13607A651FAB0A1C006C60BE /* Info.plist */,
 			);
 			path = MMPUITests;
+			sourceTree = "<group>";
+		};
+		13607A711FAB0F23006C60BE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				13607A731FAB0F52006C60BE /* Model */,
+				13607A721FAB0F3C006C60BE /* View */,
+				13607A741FAB0F65006C60BE /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		13607A721FAB0F3C006C60BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13607A731FAB0F52006C60BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13607A741FAB0F65006C60BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13607A751FAB0FBB006C60BE /* MMTabBarController.h */,
+				13607A761FAB0FBB006C60BE /* MMTabBarController.m */,
+				13607A781FAB0FDB006C60BE /* MMNavigationController.h */,
+				13607A791FAB0FDB006C60BE /* MMNavigationController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +315,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13607A461FAB0A1B006C60BE /* ViewController.m in Sources */,
+				13607A7A1FAB0FDB006C60BE /* MMNavigationController.m in Sources */,
+				13607A771FAB0FBB006C60BE /* MMTabBarController.m in Sources */,
 				13607A431FAB0A1B006C60BE /* AppDelegate.m in Sources */,
 				13607A401FAB0A1B006C60BE /* main.m in Sources */,
 			);
@@ -508,6 +552,7 @@
 				13607A6A1FAB0A1C006C60BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13607A6B1FAB0A1C006C60BE /* Build configuration list for PBXNativeTarget "MMPTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +561,7 @@
 				13607A6D1FAB0A1C006C60BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13607A6E1FAB0A1C006C60BE /* Build configuration list for PBXNativeTarget "MMPUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +570,7 @@
 				13607A701FAB0A1C006C60BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

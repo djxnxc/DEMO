@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  MMP
+//  LanguageDemo
 //
-//  Created by 12 on 17/11/2.
-//  Copyright © 2017年 12. All rights reserved.
+//  Created by 12 on 2018/1/24.
+//  Copyright © 2018年 Sino. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
+    ViewController *vc = [[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
+    self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
